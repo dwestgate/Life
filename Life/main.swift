@@ -31,7 +31,7 @@ if (Process.arguments.count == 4) {
   var outputPath = Process.arguments[2]
   var generations = Int(Process.arguments[3])
     
-  var currentGeneration = MySparseArray(0)
+  var currentGeneration = SparseArray(0)
     
   var line: String
   
@@ -60,8 +60,8 @@ if (Process.arguments.count == 4) {
   }
   
   for (var generation = 0; generation < generations; generation++) {
-    var neighborCount = MySparseArray(0)
-    var nextGeneration = MySparseArray(0)
+    var neighborCount = SparseArray(0)
+    var nextGeneration = SparseArray(0)
     
     var row = 0
     

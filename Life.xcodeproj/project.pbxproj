@@ -10,7 +10,7 @@
 		C400FA5A1C921CBC00E4FED7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400FA591C921CBC00E4FED7 /* LinkedList.swift */; };
 		C4CB18B71C95C7D500A6EB19 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB18B61C95C7D500A6EB19 /* Node.swift */; };
 		C4FCB2781C8E450F00570637 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB2771C8E450F00570637 /* main.swift */; };
-		C4FCB27F1C8E4A1000570637 /* MySparseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */; };
+		C4FCB27F1C8E4A1000570637 /* SparseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB27E1C8E4A1000570637 /* SparseArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 		C4CB18B61C95C7D500A6EB19 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		C4FCB2741C8E450F00570637 /* Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Life; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FCB2771C8E450F00570637 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySparseArray.swift; sourceTree = "<group>"; };
+		C4FCB27E1C8E4A1000570637 /* SparseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				C4FCB2771C8E450F00570637 /* main.swift */,
-				C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */,
+				C4FCB27E1C8E4A1000570637 /* SparseArray.swift */,
 				C400FA591C921CBC00E4FED7 /* LinkedList.swift */,
 				C4CB18B61C95C7D500A6EB19 /* Node.swift */,
 			);
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4FCB2781C8E450F00570637 /* main.swift in Sources */,
-				C4FCB27F1C8E4A1000570637 /* MySparseArray.swift in Sources */,
+				C4FCB27F1C8E4A1000570637 /* SparseArray.swift in Sources */,
 				C4CB18B71C95C7D500A6EB19 /* Node.swift in Sources */,
 				C400FA5A1C921CBC00E4FED7 /* LinkedList.swift in Sources */,
 			);

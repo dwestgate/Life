@@ -1,5 +1,5 @@
 //
-//  MySparseArray.swift
+//  SparseArray.swift
 //  Life
 //
 //  Created by David Westgate on 3/7/16.
@@ -7,7 +7,7 @@
 //
 import Foundation
 
-class MySparseArray<T> {
+class SparseArray<T> {
 
   var defaultValue: T
   var rows: LinkedList<LinkedList<T>>
@@ -16,7 +16,7 @@ class MySparseArray<T> {
   /**
    * Constructor
    *
-   * @param defaultValue The MySparseArray default value - elements that do not exist are assumed to have this value.
+   * @param defaultValue The SparseArray default value - elements that do not exist are assumed to have this value.
    */
   init(_ defaultValue: T) {
     self.defaultValue = defaultValue
@@ -76,7 +76,7 @@ class MySparseArray<T> {
   
 }
 
-extension MySparseArray: SequenceType {
+extension SparseArray: SequenceType {
   func generate() -> SparseArrayGenerator<T> {
     return SparseArrayGenerator(self)
   }
@@ -89,7 +89,7 @@ struct SparseArrayGenerator<T>: GeneratorType {
   var currentList: LinkedList<T>?
   var currentNode: Node<T>?
   
-  init(_ sparseArray: MySparseArray<T>) {
+  init(_ sparseArray: SparseArray<T>) {
     rows = sparseArray.rows
     cols = sparseArray.cols
     currentRow = rows.head
