@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C400FA541C921A8000E4FED7 /* ElementIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400FA531C921A8000E4FED7 /* ElementIterator.swift */; };
+		C400FA561C921BE000E4FED7 /* MatrixElem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400FA551C921BE000E4FED7 /* MatrixElem.swift */; };
+		C400FA581C921C2600E4FED7 /* RowIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400FA571C921C2600E4FED7 /* RowIterator.swift */; };
+		C400FA5A1C921CBC00E4FED7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400FA591C921CBC00E4FED7 /* LinkedList.swift */; };
+		C4CB18B71C95C7D500A6EB19 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB18B61C95C7D500A6EB19 /* Node.swift */; };
 		C4FCB2781C8E450F00570637 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB2771C8E450F00570637 /* main.swift */; };
+		C4FCB27F1C8E4A1000570637 /* MySparseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */; };
+		C4FCB2811C8E4A5600570637 /* SparseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB2801C8E4A5600570637 /* SparseArray.swift */; };
+		C4FCB2831C8E4B6500570637 /* ColumnIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB2821C8E4B6500570637 /* ColumnIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C400FA531C921A8000E4FED7 /* ElementIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementIterator.swift; sourceTree = "<group>"; };
+		C400FA551C921BE000E4FED7 /* MatrixElem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixElem.swift; sourceTree = "<group>"; };
+		C400FA571C921C2600E4FED7 /* RowIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowIterator.swift; sourceTree = "<group>"; };
+		C400FA591C921CBC00E4FED7 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		C4CB18B61C95C7D500A6EB19 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		C4FCB2741C8E450F00570637 /* Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Life; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FCB2771C8E450F00570637 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySparseArray.swift; sourceTree = "<group>"; };
+		C4FCB2801C8E4A5600570637 /* SparseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseArray.swift; sourceTree = "<group>"; };
+		C4FCB2821C8E4B6500570637 /* ColumnIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				C4FCB2771C8E450F00570637 /* main.swift */,
+				C4FCB27E1C8E4A1000570637 /* MySparseArray.swift */,
+				C4FCB2801C8E4A5600570637 /* SparseArray.swift */,
+				C4FCB2821C8E4B6500570637 /* ColumnIterator.swift */,
+				C400FA531C921A8000E4FED7 /* ElementIterator.swift */,
+				C400FA551C921BE000E4FED7 /* MatrixElem.swift */,
+				C400FA571C921C2600E4FED7 /* RowIterator.swift */,
+				C400FA591C921CBC00E4FED7 /* LinkedList.swift */,
+				C4CB18B61C95C7D500A6EB19 /* Node.swift */,
 			);
 			path = Life;
 			sourceTree = "<group>";
@@ -120,6 +144,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4FCB2781C8E450F00570637 /* main.swift in Sources */,
+				C400FA581C921C2600E4FED7 /* RowIterator.swift in Sources */,
+				C4FCB27F1C8E4A1000570637 /* MySparseArray.swift in Sources */,
+				C4CB18B71C95C7D500A6EB19 /* Node.swift in Sources */,
+				C4FCB2811C8E4A5600570637 /* SparseArray.swift in Sources */,
+				C4FCB2831C8E4B6500570637 /* ColumnIterator.swift in Sources */,
+				C400FA541C921A8000E4FED7 /* ElementIterator.swift in Sources */,
+				C400FA5A1C921CBC00E4FED7 /* LinkedList.swift in Sources */,
+				C400FA561C921BE000E4FED7 /* MatrixElem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +271,7 @@
 				C4FCB27D1C8E450F00570637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
