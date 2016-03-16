@@ -5,7 +5,6 @@
 //  Created by David Westgate on 3/7/16.
 //  Copyright © 2016 Refabricants. All rights reserved.
 //
-
 import Foundation
 
 func usage() {
@@ -25,68 +24,6 @@ func usage() {
   print("\nExample: Life testinput.txt testoutput.txt 4\n")
 }
 
-
-// Begin Testing
-/*
-var lltest = LinkedList<Int>(true)
-
-lltest.insertValueAtPosition(1, position: 10)
-lltest.insertValueAtPosition(2, position: 9)
-lltest.insertValueAtPosition(3, position: 11)
-lltest.insertValueAtPosition(4, position: 7)
-lltest.insertValueAtPosition(5, position: 6)
-lltest.insertValueAtPosition(6, position: 8)
-lltest.insertValueAtPosition(7, position: 12)
-
-var listAsString = ""
-for element in lltest {
-  listAsString = listAsString + String(element) + "  "
-}
-// print(listAsString)
-
-// print(lltest.toString())
-
-var satest = MySparseArray(0)
-
-print("     1  2  3  4  5  6  7  8  9")
-satest.setValue(7, row: 1, col: 1)
-satest.setValue(6, row: 2, col: 1)
-satest.setValue(5, row: 9, col: 7)
-satest.setValue(4, row: 3, col: 6)
-satest.setValue(3, row: 4, col: 4)
-satest.setValue(2, row: 6, col: 3)
-satest.setValue(1, row: 8, col: 1)
-satest.setValue(1, row: 8, col: 2)
-satest.setValue(1, row: 8, col: 3)
-satest.setValue(1, row: 8, col: 4)
-satest.setValue(1, row: 8, col: 5)
-satest.setValue(1, row: 8, col: 6)
-satest.setValue(1, row: 8, col: 7)
-satest.setValue(3, row: 8, col: 8)
-satest.setValue(1, row: 8, col: 9)
-
-
-print(String(satest.elementAt(row: 4, col: 5)))
-print(satest.toString())
-
-for i in satest {
-  print(String(i))
-}
-print("")
-
-var g = satest.generate()
-while g.hasNext() {
-  print(g.next())
-}
-
-let y = MySparseArray(0)
-var x = y.generate()
-while x.hasNext() {
-  print(x.next())
-}
-print("it worked!")
-*/
-// End Testing
 
 if (Process.arguments.count == 4) {
     
@@ -198,51 +135,3 @@ if (Process.arguments.count == 4) {
 } else {
   usage()
 }
-    
-/*
-
-      
-      RowIterator neighborRow = NeighborCount.iterateRows()
-      
-      while (neighborRow.hasNext()) {
-        ElemIterator elem = neighborRow.next()
-        row = elem.nonIteratingIndex()
-        while (elem.hasNext()) {
-          int col = elem.next().columnIndex()
-          
-          if ((NeighborCount.elementAt(row, col).equals(new Integer(3))) ||
-            ((NeighborCount.elementAt(row, col).equals(
-              new Integer(2)) && !CurrentGeneration.elementAt(row, col)
-                .equals(CurrentGeneration.defaultValue())))) {
-                  NextGeneration.setValue(row, col, new Integer(1))
-          }
-        }
-      }
-      
-      CurrentGeneration = NextGeneration
-      
-    }
-    
-    
-    try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputPath))) {
-      
-      RowIterator currentRow = CurrentGeneration.iterateRows()
-      int row = 0
-      
-      while (currentRow.hasNext()) {
-        ElemIterator elem = currentRow.next()
-        row = elem.nonIteratingIndex()
-        while (elem.hasNext()) {
-          int col = elem.next().columnIndex()
-          bw.write(String.format("%d,%d%n", row, col))
-        }
-        
-      }
-      print("Output file %s generated successfully, exiting.", outputPath)
-    } catch (IOException e) {
-      print("Error writing to output file")
-    }
-  }
- else {
-    usage()
-  }*/

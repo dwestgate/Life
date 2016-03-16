@@ -5,7 +5,6 @@
 //  Created by David Westgate on 3/7/16.
 //  Copyright © 2016 Refabricants. All rights reserved.
 //
-
 import Foundation
 
 class MySparseArray<T> {
@@ -13,7 +12,6 @@ class MySparseArray<T> {
   var defaultValue: T
   var rows: LinkedList<LinkedList<T>>
   var cols: LinkedList<LinkedList<T>>
-  // var size = 0
 
   /**
    * Constructor
@@ -78,17 +76,12 @@ class MySparseArray<T> {
   
 }
 
-
 extension MySparseArray: SequenceType {
   func generate() -> SparseArrayGenerator<T> {
     return SparseArrayGenerator(self)
   }
 }
 
-// Todo: Fix this
-/**
-* Iterator for the Elem class
-*/
 struct SparseArrayGenerator<T>: GeneratorType {
   var rows: LinkedList<LinkedList<T>>
   var cols: LinkedList<LinkedList<T>>
@@ -130,10 +123,6 @@ struct SparseArrayGenerator<T>: GeneratorType {
   }
 
   
-  /**
-   *
-   * @return  True if the row or column being traversed has more Elems
-   */
   func hasNext() -> Bool {
     let emptyArray = ((currentRow === rows.tail) && (currentRow.value == nil))
     let lastNode = (currentNode === rows.tail.value?.tail)
